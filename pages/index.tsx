@@ -57,7 +57,7 @@ const HomePage = ({
         ))}
       </div>
 
-      <h2 className="my-4 text-center">Upstream projects</h2>
+      <h2 className="my4- text-center">Upstream projects</h2>
       <Row>
         {framework.map(({ logo, title, summary, link, repository }) => (
           <Col sm={4} key={title}>
