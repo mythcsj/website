@@ -1,4 +1,5 @@
 import type { InferGetStaticPropsType } from 'next';
+import Link from 'next/link';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
@@ -17,7 +18,18 @@ const HomePage = ({
   framework,
 }: InferGetStaticPropsType<typeof getStaticProps>) => (
   <>
-    <PageHead />
+    <div className="m-4 d-flex justify-content-center">
+      关于主页还在开发中……
+    </div>
+
+    <div className="m-4 d-flex justify-content-center">
+      可点击查看&emsp;
+      <Link href="/about">
+        <u>我的光辉历程</u>
+      </Link>
+    </div>
+
+    {/* <PageHead />
 
     <main
       className={`flex-fill d-flex flex-column justify-content-center align-items-center ${styles.main}`}
@@ -79,7 +91,7 @@ const HomePage = ({
           </Col>
         ))}
       </Row>
-    </main>
+    </main> */}
   </>
 );
 

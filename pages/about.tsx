@@ -28,7 +28,7 @@ export default function AboutPage({
       <div className="h-100 d-flex justify-content-center">
         <ul>
           {myInfoDetail.map(({ date, event }) => (
-            <li key={date} className="d-flex align-content-center">
+            <li key={date} className="m-2 d-flex align-content-center">
               {date} : {event}
             </li>
           ))}
