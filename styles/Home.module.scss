@@ -15,8 +15,8 @@
   }
 }
 .description {
-  margin: 4rem 0;
-  line-height: 1.5;
+  margin: 2rem 0;
+  line-height: 1.2;
 }
 
 .code {
@@ -32,10 +32,10 @@
     width: 100%;
   }
 }
+
 .card {
   color: inherit;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
   &:hover,
   &:focus,
   &:active {

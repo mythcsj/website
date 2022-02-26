@@ -44,3 +44,10 @@ export const framework = [
     repository: 'https://github.com/microsoft/TypeScript',
   },
 ];
+
+export const community = [
+  {
+    title: '',
+    image: '',
+  },
+];
