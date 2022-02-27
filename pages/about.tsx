@@ -1,7 +1,9 @@
 import { InferGetStaticPropsType } from 'next';
 import { Card } from 'react-bootstrap';
-import styles from '../styles/Home.module.scss';
 import { myInfo, myInfoDetail } from './api/about';
+import { lines } from './api/timeLine';
+import Timeline from '../components/TimeLine';
+import styles from '../styles/Home.module.scss';
 
 export function getStaticProps() {
   return { props: { myInfo, myInfoDetail } };
@@ -21,7 +23,7 @@ export default function AboutPage({
       </div>
 
       <div className="text-center">
-        <h5 className={`${styles.description}`}>{myInfo.description}</h5>
+        <h4 className={`${styles.description}`}>{myInfo.description}</h4>
         <p>{myInfo.address}</p>
       </div>
 
@@ -34,6 +36,10 @@ export default function AboutPage({
           ))}
         </ul>
       </div>
+
+      <h4 className={`${styles.description} text-center`}>{myInfo.honor}</h4>
+
+      <Timeline datas={lines} />
     </>
   );
 }

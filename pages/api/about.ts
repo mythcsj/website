@@ -2,7 +2,9 @@ export const myInfo = {
   title: '江湖人称诗杰弟弟',
   description: '诗杰，在2012年的时候改的名字，只因以前的太难听',
   address: '坐标成都，老家万州',
-  url: 'csj.jpg',
+  honor:
+    '昨天所有的荣誉，已变成遥远的回忆……再苦再难也要坚强，只为那些期待眼神……',
+  url: 'image/csj.jpg',
 };
 
 export const myInfoDetail = [
