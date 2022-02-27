@@ -1,5 +1,12 @@
-import CheckCircleOutline from '@material-ui/icons/CheckCircleOutline';
-import Face from '@material-ui/icons/Face';
+import {
+  StarRate,
+  Face,
+  CheckCircleOutline,
+  ThumbUp,
+  ThumbUpRounded,
+  GroupSharp,
+  EmojiEvents,
+} from '@material-ui/icons';
 
 export const lines = [
   {
@@ -8,7 +15,7 @@ export const lines = [
     date: '2020',
     imageSrc: 'image/devops2020.jpg',
     description: '2020年度中国DevOps社区志愿者',
-    icon: CheckCircleOutline,
+    icon: ThumbUp,
   },
   {
     id: '2',
@@ -16,7 +23,7 @@ export const lines = [
     date: '2020',
     imageSrc: 'image/hdz.jpg',
     description: '2020年在华为云HDZ正式转正',
-    icon: CheckCircleOutline,
+    icon: ThumbUpRounded,
   },
   {
     id: '3',
@@ -24,7 +31,7 @@ export const lines = [
     date: '2020',
     imageSrc: 'image/hdz2020gx.jpg',
     description: '被授予2020年度华为云HDZ社区贡献领袖奖',
-    icon: CheckCircleOutline,
+    icon: EmojiEvents,
   },
   {
     id: '4',
@@ -48,7 +55,7 @@ export const lines = [
     date: '2021',
     imageSrc: 'image/concon21.jpg',
     description: "开源社COSCon'21志愿者",
-    icon: Face,
+    icon: StarRate,
   },
   {
     id: '7',
@@ -56,7 +63,7 @@ export const lines = [
     date: '2021',
     imageSrc: 'image/conconzx.jpg',
     description: '被授予COSCon中国开源年会『COSCon之星』',
-    icon: Face,
+    icon: EmojiEvents,
   },
   {
     id: '8',
@@ -72,7 +79,7 @@ export const lines = [
     date: '2021',
     imageSrc: 'image/hdz2021zy.jpg',
     description: '被授予2021年度华为云HDZ社区卓越领袖奖',
-    icon: CheckCircleOutline,
+    icon: EmojiEvents,
   },
   {
     id: '10',
@@ -80,6 +87,6 @@ export const lines = [
     date: '2022',
     imageSrc: 'image/sqzg.jpg',
     description: '被授予社区之光奖',
-    icon: CheckCircleOutline,
+    icon: EmojiEvents,
   },
 ];
