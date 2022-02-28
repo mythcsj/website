@@ -18,37 +18,20 @@ const HomePage = ({
   framework,
 }: InferGetStaticPropsType<typeof getStaticProps>) => (
   <>
-    <div className="m-4 d-flex justify-content-center">
-      关于主页还在开发中……
-    </div>
-
-    <div className="m-4 d-flex justify-content-center">
-      可点击查看&emsp;
-      <Link href="/about">
-        <u>我的光辉历程</u>
-      </Link>
-    </div>
-
-    {/* <PageHead />
+    <PageHead />
 
     <main
       className={`flex-fill d-flex flex-column justify-content-center align-items-center ${styles.main}`}
     >
       <h1 className={`m-0 text-center ${styles.title}`}>
-        Welcome to
-        <a className="text-primary mx-2" href="https://nextjs.org">
-          Next.js!
-        </a>
+        Welcome to mythcsj space
       </h1>
 
       <p className={`text-center fs-4 ${styles.description}`}>
-        Get started by editing
-        <code className={`mx-2 rounded-3 bg-light ${styles.code}`}>
-          pages/index.tsx
-        </code>
+        This is a magical website
       </p>
 
-      <div
+      {/* <div
         className={`d-flex flex-wrap flex-column flex-sm-row justify-content-center align-items-center ${styles.grid}`}
       >
         {mainNav.map(({ link, title, summary }) => (
@@ -60,16 +43,35 @@ const HomePage = ({
             <Card.Body>
               <Card.Title as="h2" className="fs-4 mb-3">
                 <a href={link} className="stretched-link">
-                  {title} &rarr;
+                  {title}
                 </a>
               </Card.Title>
               <Card.Text className="fs-5">{summary}</Card.Text>
             </Card.Body>
           </Card>
         ))}
-      </div>
+      </div> */}
 
       <h2 className="my4- text-center">Upstream projects</h2>
+      <Row>
+        {mainNav.map(({ link, title, summary }) => (
+          <Col key={title}>
+            <Card className={`h-100 ${styles.card}`}>
+              <Card.Body style={{ height: '200px' }}>
+                <Card.Title>{title}</Card.Title>
+                <Card.Text>{summary}</Card.Text>
+              </Card.Body>
+              {/* <Card.Footer className="d-flex justify-content-around">
+                <Button variant="primary" href={link}>
+                  Home Page
+                </Button>
+              </Card.Footer> */}
+            </Card>
+          </Col>
+        ))}
+      </Row>
+
+      {/* <h2 className="my4- text-center">Upstream projects</h2>
       <Row>
         {framework.map(({ logo, title, summary, link, repository }) => (
           <Col sm={4} key={title}>
@@ -90,8 +92,8 @@ const HomePage = ({
             </Card>
           </Col>
         ))}
-      </Row>
-    </main> */}
+      </Row> */}
+    </main>
   </>
 );
 

@@ -1,6 +1,5 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import Image from 'next/image';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -8,22 +7,15 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import 'idea-react/dist/index.css';
 import '../styles/globals.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
-        ></link>
+        <title>诗杰的地盘</title>
       </Head>
 
       <Navbar bg="primary" variant="dark" fixed="top">
