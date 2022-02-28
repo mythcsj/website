@@ -1,23 +1,13 @@
 export const mainNav = [
   {
-    title: 'Documentation',
+    title: '好好学习',
     link: 'https://nextjs.org/docs',
     summary: 'Find in-depth information about Next.js features and API.',
   },
   {
-    title: 'Learn',
+    title: '天天向上',
     link: 'https://nextjs.org/learn',
     summary: 'Learn about Next.js in an interactive course with quizzes!',
-  },
-  {
-    title: 'Examples',
-    link: 'https://github.com/vercel/next.js/tree/master/examples',
-    summary: 'Discover and deploy boilerplate example Next.js projects.',
-  },
-  {
-    title: 'Deploy',
-    link: 'https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app',
-    summary: 'Instantly deploy your Next.js site to a public URL with Vercel.',
   },
 ];
 

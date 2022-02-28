@@ -1,7 +1,6 @@
 import {
   StarRate,
   Face,
-  CheckCircleOutline,
   ThumbUp,
   ThumbUpRounded,
   GroupSharp,
@@ -47,7 +46,7 @@ export const lines = [
     date: '2021',
     imageSrc: 'image/devops2021.jpg',
     description: '2021年度中国DevOps社区志愿者',
-    icon: CheckCircleOutline,
+    icon: GroupSharp,
   },
   {
     id: '6',
@@ -85,7 +84,7 @@ export const lines = [
     id: '10',
     title: '社区之光',
     date: '2022',
-    imageSrc: 'image/sqzg.jpg',
+    imageSrc: '',
     description: '被授予社区之光奖',
     icon: EmojiEvents,
   },
