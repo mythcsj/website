@@ -40,6 +40,25 @@ export default function AboutPage({
       <h4 className={`${styles.description} text-center`}>{myInfo.honor}</h4>
 
       <Timeline datas={lines} />
+
+      <div className="m-5 d-flex justify-content-center">
+        <Card
+          className={`h-100 ${styles.card}`}
+          style={{ backgroundColor: '#99CCCC' }}
+        >
+          <Card.Body style={{ height: '200px', width: '500px' }}>
+            <Card.Title>关于本站</Card.Title>
+            <Card.Text>
+              <ol className="m-3">
+                <li>专业吹水二十年，欢迎来打脸</li>
+                <li>不涉及任何商业行为</li>
+                <li>不发布、传送、传播、储存违反国家法律法规禁止的内容</li>
+                <li>禁止违反法律法规、政策及公序良俗</li>
+              </ol>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </div>
     </>
   );
 }
