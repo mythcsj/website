@@ -13,7 +13,7 @@ export type TimelineProps = PropsWithChildren<{
 export default function Timeline({ datas }: TimelineProps) {
   return (
     <>
-      <VerticalTimeline lineColor="green">
+      <VerticalTimeline lineColor="green" animate="false">
         {datas.map(({ id, title, icon: Icon, imageSrc, date, description }) => (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -41,7 +41,7 @@ export default function Timeline({ datas }: TimelineProps) {
             ) : (
               <></>
             )}
-            <p>{description}</p>
+            {!!description ? <p>{description}</p> : <></>}
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
