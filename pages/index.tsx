@@ -28,7 +28,7 @@ const HomePage = ({
       </h1>
 
       <p className={`text-center fs-4 ${styles.description}`}>
-        This is a magical website
+        首页还没想好写啥
       </p>
 
       {/* <div
@@ -52,7 +52,7 @@ const HomePage = ({
         ))}
       </div> */}
 
-      <h2 className="my4- text-center">Upstream projects</h2>
+      {/* <h2 className="my4- text-center">Upstream projects</h2>
       <Row>
         {mainNav.map(({ link, title, summary }) => (
           <Col key={title}>
@@ -61,15 +61,15 @@ const HomePage = ({
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>{summary}</Card.Text>
               </Card.Body>
-              {/* <Card.Footer className="d-flex justify-content-around">
+              <Card.Footer className="d-flex justify-content-around">
                 <Button variant="primary" href={link}>
                   Home Page
                 </Button>
-              </Card.Footer> */}
+              </Card.Footer>
             </Card>
           </Col>
         ))}
-      </Row>
+      </Row> */}
 
       {/* <h2 className="my4- text-center">Upstream projects</h2>
       <Row>
