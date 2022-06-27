@@ -28,7 +28,7 @@ const HomePage = ({
       </h1>
 
       <p className={`text-center fs-4 ${styles.description}`}>
-        首页还没想好写啥
+        首页还没想好写啥,主要是我还不会写前端
       </p>
 
       {/* <div
