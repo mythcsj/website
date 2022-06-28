@@ -83,4 +83,8 @@ export const myInfoDetail = [
     date: '2022-05-29',
     event: '开放协作人要给我颁一个奖『社区之光』，感谢果汁抢注，唐总代言',
   },
+  {
+    date: '2022-06-27',
+    event: '',
+  },
 ];
