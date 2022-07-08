@@ -15,7 +15,6 @@ export default class HomePage extends PureComponent {
     link: '',
   };
   render() {
-    let close = () => this.setState({ show: false });
     return (
       <>
         <PageHead title="mythcsj" />
