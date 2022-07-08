@@ -13,10 +13,7 @@ export default function PageHead({
 }: PageHeadProps) {
   return (
     <Head>
-      <title>
-        {title}
-        {title && ' - '}Next-Bootstrap.ts
-      </title>
+      <title>{title}</title>
 
       {description && <meta name="description" content={description} />}
 

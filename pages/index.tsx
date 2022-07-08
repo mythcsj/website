@@ -1,100 +1,72 @@
-import type { InferGetStaticPropsType } from 'next';
-import Link from 'next/link';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
+import { PureComponent } from 'react';
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
 
+import { OnlineArticlePanel } from '../components/OnlineArticlePanel';
 import PageHead from '../components/PageHead';
 import styles from '../styles/Home.module.scss';
-import { mainNav, framework } from './api/home';
+import { mainNav } from './api/home';
 
-export function getStaticProps() {
-  return { props: { mainNav, framework } };
-}
+export default class HomePage extends PureComponent {
+  state = {
+    show: false,
+  };
+  render() {
+    let close = () => this.setState({ show: false });
+    return (
+      <>
+        <PageHead title="mythcsj" />
 
-const HomePage = ({
-  mainNav,
-  framework,
-}: InferGetStaticPropsType<typeof getStaticProps>) => (
-  <>
-    <PageHead />
+        <main
+          className={`flex-fill d-flex flex-column justify-content-center align-items-center ${styles.main}`}
+        >
+          <h1 className={`m-0 text-center ${styles.title}`}>
+            Welcome to mythcsj space
+          </h1>
 
-    <main
-      className={`flex-fill d-flex flex-column justify-content-center align-items-center ${styles.main}`}
-    >
-      <h1 className={`m-0 text-center ${styles.title}`}>
-        Welcome to mythcsj space
-      </h1>
+          <p className={`text-center fs-4 ${styles.description}`}>
+            一个被代码耽误的诗人
+          </p>
 
-      <p className={`text-center fs-4 ${styles.description}`}>
-        首页还没想好写啥,主要是我还不会写前端 我要好好学前端
-      </p>
-
-      {/* <div
-        className={`d-flex flex-wrap flex-column flex-sm-row justify-content-center align-items-center ${styles.grid}`}
-      >
-        {mainNav.map(({ link, title, summary }) => (
-          <Card
-            key={link}
-            className={`m-3 p-4 rounded-3 border ${styles.card}`}
-            tabIndex={-1}
+          <div
+            className={`d-flex flex-wrap flex-column flex-sm-row justify-content-center align-items-center `}
           >
-            <Card.Body>
-              <Card.Title as="h2" className="fs-4 mb-3">
-                <a href={link} className="stretched-link">
-                  {title}
-                </a>
-              </Card.Title>
-              <Card.Text className="fs-5">{summary}</Card.Text>
-            </Card.Body>
-          </Card>
-        ))}
-      </div> */}
+            {mainNav.map(({ link, title, summary }) => (
+              <Col sm={4} key={title}>
+                <Card
+                  key={link}
+                  className={`m-3 p-4 rounded-3 border ${styles.card}`}
+                  tabIndex={-1}
+                >
+                  <Card.Body>
+                    <Card.Title as="h2" className="fs-4 mb-3">
+                      {title}
+                    </Card.Title>
+                    <Card.Text className="fs-5">{summary}</Card.Text>
 
-      {/* <h2 className="my4- text-center">Upstream projects</h2>
-      <Row>
-        {mainNav.map(({ link, title, summary }) => (
-          <Col key={title}>
-            <Card className={`h-100 ${styles.card}`}>
-              <Card.Body style={{ height: '200px' }}>
-                <Card.Title>{title}</Card.Title>
-                <Card.Text>{summary}</Card.Text>
-              </Card.Body>
-              <Card.Footer className="d-flex justify-content-around">
-                <Button variant="primary" href={link}>
-                  Home Page
-                </Button>
-              </Card.Footer>
-            </Card>
-          </Col>
-        ))}
-      </Row> */}
+                    <Button
+                      variant="primary"
+                      onClick={() => {
+                        this.setState({ show: true });
+                      }}
+                    >
+                      查看详情
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </div>
+        </main>
 
-      {/* <h2 className="my4- text-center">Upstream projects</h2>
-      <Row>
-        {framework.map(({ logo, title, summary, link, repository }) => (
-          <Col sm={4} key={title}>
-            <Card className={`h-100 ${styles.card}`}>
-              <Card.Img variant="top" src={logo} className={styles.cardImg} />
-              <Card.Body>
-                <Card.Title>{title}</Card.Title>
-                <Card.Text>{summary}</Card.Text>
-              </Card.Body>
-              <Card.Footer className="d-flex justify-content-around">
-                <Button variant="primary" href={link}>
-                  Home Page
-                </Button>
-                <Button variant="success" href={repository}>
-                  Source Code
-                </Button>
-              </Card.Footer>
-            </Card>
-          </Col>
-        ))}
-      </Row> */}
-    </main>
-  </>
-);
-
-export default HomePage;
+        <OnlineArticlePanel
+          show={this.state.show}
+          onHide={() => {
+            this.setState({ show: false });
+          }}
+        ></OnlineArticlePanel>
+      </>
+    );
+  }
+}

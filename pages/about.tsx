@@ -26,7 +26,6 @@ export default function AboutPage({
         <h4 className={`${styles.description}`}>{myInfo.description}</h4>
         <p>{myInfo.address}</p>
       </div>
-
       <div className="h-100 d-flex justify-content-center">
         <ul>
           {myInfoDetail.map(({ date, event }) => (
