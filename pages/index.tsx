@@ -11,6 +11,8 @@ import { mainNav } from './api/home';
 export default class HomePage extends PureComponent {
   state = {
     show: false,
+    // title: '',
+    // link: '',
   };
   render() {
     let close = () => this.setState({ show: false });
@@ -22,7 +24,7 @@ export default class HomePage extends PureComponent {
           className={`flex-fill d-flex flex-column justify-content-center align-items-center ${styles.main}`}
         >
           <h1 className={`m-0 text-center ${styles.title}`}>
-            Welcome to mythcsj space
+            welcome to mythcsj space
           </h1>
 
           <p className={`text-center fs-4 ${styles.description}`}>
@@ -33,7 +35,7 @@ export default class HomePage extends PureComponent {
             className={`d-flex flex-wrap flex-column flex-sm-row justify-content-center align-items-center `}
           >
             {mainNav.map(({ link, title, summary }) => (
-              <Col sm={4} key={title}>
+              <Col sm={12} key={title}>
                 <Card
                   key={link}
                   className={`m-3 p-4 rounded-3 border ${styles.card}`}
@@ -44,6 +46,15 @@ export default class HomePage extends PureComponent {
                       {title}
                     </Card.Title>
                     <Card.Text className="fs-5">{summary}</Card.Text>
+
+                    <OnlineArticlePanel
+                      // key={this.state.title}
+                      show={this.state.show}
+                      // link={this.state.link}
+                      onHide={() => {
+                        this.setState({ show: false });
+                      }}
+                    ></OnlineArticlePanel>
 
                     <Button
                       variant="primary"
@@ -59,13 +70,6 @@ export default class HomePage extends PureComponent {
             ))}
           </div>
         </main>
-
-        <OnlineArticlePanel
-          show={this.state.show}
-          onHide={() => {
-            this.setState({ show: false });
-          }}
-        ></OnlineArticlePanel>
       </>
     );
   }
