@@ -11,8 +11,8 @@ import { mainNav } from './api/home';
 export default class HomePage extends PureComponent {
   state = {
     show: false,
-    // title: '',
-    // link: '',
+    title: '',
+    link: '',
   };
   render() {
     let close = () => this.setState({ show: false });
@@ -48,9 +48,9 @@ export default class HomePage extends PureComponent {
                     <Card.Text className="fs-5">{summary}</Card.Text>
 
                     <OnlineArticlePanel
-                      // key={this.state.title}
+                      key={this.state.title}
                       show={this.state.show}
-                      // link={this.state.link}
+                      link={this.state.link}
                       onHide={() => {
                         this.setState({ show: false });
                       }}
@@ -59,7 +59,7 @@ export default class HomePage extends PureComponent {
                     <Button
                       variant="primary"
                       onClick={() => {
-                        this.setState({ show: true });
+                        this.setState({ show: true, title, link });
                       }}
                     >
                       查看详情
