@@ -84,7 +84,11 @@ export const myInfoDetail = [
     event: '开放协作人要给我颁一个奖『社区之光』，感谢果汁抢注，唐总代言',
   },
   {
-    date: '2022-06-27',
-    event: '',
+    date: '2022-07-17',
+    event: '被授予极狐 GitLab 成都 User Group Leader',
+  },
+  {
+    date: '2022-08-06',
+    event: '被授予 TiDB Community 成都地区负责人',
   },
 ];

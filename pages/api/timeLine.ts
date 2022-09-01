@@ -85,7 +85,7 @@ export const lines = [
     title: '社区之光',
     date: '2022',
     imageSrc: 'image/sqzg.jpg',
-    description: '被授予社区之光奖',
+    description: '被授予社区之光',
     icon: EmojiEvents,
   },
 ];
