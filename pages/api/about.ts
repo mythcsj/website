@@ -65,7 +65,7 @@ export const myInfoDetail = [
   },
   {
     date: '2021-12-11',
-    event: '参与PyChina Meetup,就是去蹭了两顿饭,成了PyChina的志愿者',
+    event: '参与PyChina Meetup,就是去蹭了两顿饭,成了PyChina的人',
   },
   {
     date: '2021-12-18',
