@@ -31,11 +31,7 @@ export default function ComponentPage() {
         <TimeDistance date="1989-06-04" />
 
         <h2 className="mt-3">Pagination Bar</h2>
-        <PaginationBar
-          pathResolver={index => `/test?page=${index}`}
-          total={10}
-          current={5}
-        />
+
         <h2 className="mt-3">Icon</h2>
         <Icon name="heart" className="text-danger" />
 
