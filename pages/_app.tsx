@@ -29,6 +29,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       </Navbar>
 
       <div className="mt-5 pt-2">
+        {/* @ts-ignore */}
         <Component {...pageProps} />
       </div>
 
