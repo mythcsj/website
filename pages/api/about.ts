@@ -73,11 +73,11 @@ export const myInfoDetail = [
   },
   {
     date: '2021-12-18',
-    event: '参与CSDN Meetup，云峰对话民主选择，被推选为某站成都站站长',
+    event: '参与CSDN Meetup，云峰对话民主选举，被推选为某站成都站站长',
   },
   {
     date: '2022-01-22',
-    event: '参加全天的云峰对话，与各技术社区大咖和各高校学子，聊聊2050',
+    event: '全天云峰对话，与各技术社区大咖和各高校学子，聊聊2050',
   },
   {
     date: '2022-05-29',
@@ -89,6 +89,6 @@ export const myInfoDetail = [
   },
   {
     date: '2022-08-06',
-    event: '被授予 TiDB Community 成都地区负责人',
+    event: '成为 TiDB Community 成都地区负责人',
   },
 ];
