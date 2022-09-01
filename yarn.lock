@@ -1910,7 +1910,7 @@
   dependencies:
     tslib "^2.4.0"
 
-"@swc/helpers@^0.4.3", "@swc/helpers@^0.4.7":
+"@swc/helpers@^0.4.7":
   version "0.4.11"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.11.tgz#db23a376761b3d31c26502122f349a21b592c8de"
   integrity sha512-rEUrBSGIoSFuYxwBYtlUFMlE2CwGhmW+w9355/5oduSw8e5h2+Tj4UrAGNNgP9915++wj5vkQo0UuOBqOAq4nw==
@@ -4265,14 +4265,13 @@ hyphenate-style-name@^1.0.3:
   resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz#691879af8e220aea5750e8827db4ef62a54e361d"
   integrity sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==
 
-idea-react@^0.26.0:
-  version "0.26.7"
-  resolved "https://registry.yarnpkg.com/idea-react/-/idea-react-0.26.7.tgz#a5e314a17d1741e9e1ce82c4055d89a98d0987a9"
-  integrity sha512-W1DGdvZGey0HaHZcXfWYlfh4vuMz5eJviyNF4vGZNEFj0Suavw5uWS2fBYLDV4YYzj71syFcPvD2kuVEB1jGVQ==
+idea-react@0.26.0:
+  version "0.26.0"
+  resolved "https://registry.yarnpkg.com/idea-react/-/idea-react-0.26.0.tgz#380bfa9deab001b1aaa6883114c963327233f966"
+  integrity sha512-Hy1QIGrKr4WWj/OkvuSXoZPNgqEmq6Cmn68P6dAkWyQxNDIUlxjS6H8PvawAvtjwPbae0Vg2BoEaOY84WwWzTg==
   dependencies:
     "@editorjs/editorjs" "^2.25.0"
     "@editorjs/paragraph" "^2.8.0"
-    "@swc/helpers" "^0.4.3"
     classnames "^2.3.1"
     editorjs-html "^3.4.2"
     lodash "^4.17.21"
@@ -4282,7 +4281,7 @@ idea-react@^0.26.0:
     react-dom "^17.0.2"
     react-editor-js "^2.1.0"
     react-element-to-jsx-string "^15.0.0"
-    web-utility "^3.7.6"
+    web-utility "^3.7.4"
 
 ignore@^5.2.0:
   version "5.2.0"
@@ -6030,14 +6029,6 @@ react-clientside-effect@^1.2.6:
   dependencies:
     "@babel/runtime" "^7.12.13"
 
-react-dom@18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
-  integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
-  dependencies:
-    loose-envify "^1.1.0"
-    scheduler "^0.23.0"
-
 react-dom@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
@@ -6174,13 +6165,6 @@ react-vertical-timeline-component@^3.5.2:
     classnames "^2.2.6"
     prop-types "^15.7.2"
     react-intersection-observer "^8.26.2"
-
-react@18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
-  integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
-  dependencies:
-    loose-envify "^1.1.0"
 
 react@^17.0.2:
   version "17.0.2"
@@ -6395,13 +6379,6 @@ scheduler@^0.20.2:
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-
-scheduler@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.0.tgz#ba8041afc3d30eb206a487b6b384002e4e61fdfe"
-  integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
-  dependencies:
-    loose-envify "^1.1.0"
 
 semver-diff@^3.1.1:
   version "3.1.1"
@@ -7110,7 +7087,7 @@ warning@^4.0.0, warning@^4.0.3:
   dependencies:
     loose-envify "^1.0.0"
 
-web-utility@^3.7.6:
+web-utility@^3.7.4:
   version "3.9.2"
   resolved "https://registry.yarnpkg.com/web-utility/-/web-utility-3.9.2.tgz#ace25024db6b8e2f681b6f9e1ed4f75bfb6609f5"
   integrity sha512-j/xKi6YeIjXP74jgjxrMcqu95PzvgnZCstHkLNnmHvoxL7bL1uRVbMFPO9qn7mXYA+HPYcdtzW+xk8rhEYRX+g==
